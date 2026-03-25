@@ -15,8 +15,9 @@ name: Deploy E2E Test (failure)
 run-name: "e2e test — deploy FAIL by @${{ github.actor }}"
 
 on:
-  pull_request:
-    branches: [ "main" ]
+  push:
+    branches: 
+      - "main"
 
 jobs:
   pre-deploy:
@@ -26,7 +27,7 @@ jobs:
       - name: Simulating pre-deploy work
         run: |
           echo "Running pre-deploy checks..."
-          sleep 20
+          sleep 10
           echo "Pre-deploy checks complete."
 
   deploy:
