@@ -44,5 +44,3 @@ jobs:
           sleep 10
           echo "Simulating deployment failure..."
           exit 1
-
-          
