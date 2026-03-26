@@ -45,4 +45,3 @@ jobs:
           echo "Simulating deployment failure..."
           exit 1
 
-          
